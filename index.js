@@ -76,7 +76,7 @@ bot.action('POP', (ctx) => {
 //help
 
 bot.command('/help', (ctx) => {
-            ctx.reply(`Hello 👋 ${ctx.from.first_name} (<code>If You want to contribute just send files directly to the bot \n Bot will Store your files \n\n You can access files through inline search or Direct link </code>)`, {
+            ctx.reply(`Hello 👋 ${ctx.from.first_name} <code>If You want to contribute just send files directly to the bot \n Bot will Store your files \n\n You can access files through inline search or Direct link ☺️ </code>`, {
                     parse_mode: 'HTML',
                     reply_markup: {
                         inline_keyboard: [
