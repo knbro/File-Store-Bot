@@ -39,7 +39,8 @@ bot.start(async(ctx) => {
             parse_mode: 'HTML',
             reply_markup: {
                 inline_keyboard: [
-                    [{ text: 'Search 🔎', switch_inline_query: '' }, { text: 'Link 🔗', callback_data: 'POP' }]
+                    [{ text: 'Search 🔎', switch_inline_query: '' },
+                     { text: 'Request Apps', callback_data: 'POP' }]
                 ]
             }
         })
@@ -69,17 +70,17 @@ bot.start(async(ctx) => {
 //DEFINING POP CALLBACK
 bot.action('POP', (ctx) => {
     ctx.deleteMessage()
-    ctx.reply('Send me a file 🙂')
+    ctx.reply('Hy use my partner bot to request Apk files @Apkrequestbot')
 })
 
 //help
 
 bot.command('/help', (ctx) => {
-            ctx.reply(`Hello 👋 <b>${ctx.from.first_name}</b> you can send me 📁 files and i will store and share link for that file to be used inside telegram\nYou can also use me for searching files contributed by various users\n\n(<code>Consider this as an initial version after fixing certain bugs we will make this bot opensource</code>)`, {
+            ctx.reply(`Hello 👋 ${ctx.from.first_name} (<code>If You want to contribute just send files directly to the bot \n Bot will Store your files \n\n You can access files through inline search or Direct link </code>)`, {
                     parse_mode: 'HTML',
                     reply_markup: {
                         inline_keyboard: [
-                            [{ text: 'Join Channel 🔔', url: 't.me/lkhitech' }]
+                            [{ text: 'Search 🔎', switch_inline_query:: '' }]
                         ]
                     } 
                      
