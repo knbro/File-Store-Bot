@@ -35,7 +35,7 @@ bot.start(async(ctx) => {
     //welcoming message on /start and if there is a query available we can send files
 
     if (length == 1) {
-        ctx.reply(`<b> 👋Hi I will store files for you and give sharable links .I can also make the files available for all users</b>`, {
+        ctx.reply(`<b> 👋Hi  My name is Apk Downloader Official bot of @apk_in Channel \n\n Search Inline for apk files ❤️ </b>`, {
             parse_mode: 'HTML',
             reply_markup: {
                 inline_keyboard: [
