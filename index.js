@@ -80,7 +80,7 @@ bot.command('/help', (ctx) => {
                     parse_mode: 'HTML',
                     reply_markup: {
                         inline_keyboard: [
-                            [{ text: 'Search 🔎', switch_inline_query:: '' }]
+                            [{ text: 'Search 🔎', switch_inline_query: '' }]
                         ]
                     } 
                      
